@@ -1,0 +1,37 @@
+.container {
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  height: calc(100vh - 90px);
+
+  display: flex;
+
+  justify-content: center;
+}
+.innerContainer {
+  width: 1200px;
+}
+.rating {
+  width: 100%;
+  border: 3px solid var(--cb);
+  margin-top: 3px;
+}
+.rating img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.site {
+  display: flex;
+  align-items: center;
+}
+.comment {
+  padding-left: 45px;
+}
+.rate {
+  padding-left: 45px;
+}
+.date {
+  padding-left: 45px;
+}

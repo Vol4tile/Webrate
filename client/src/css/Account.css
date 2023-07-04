@@ -1,0 +1,61 @@
+.Account {
+  width: 100%;
+  height: calc(100vh - 90px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.button {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #66fcf1;
+  border-radius: 5px;
+  color: #45a29e;
+
+  transition: 500ms;
+}
+
+.button:hover {
+  background-color: #45a29e;
+
+  color: #66fcf1;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.Account .flip-card {
+  background-color: transparent;
+  width: 1200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Account .flip-card-front {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.Account .setting {
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid var(--cb);
+  color: var(--cb);
+  cursor: pointer;
+}

@@ -1,0 +1,221 @@
+.rotating {
+  -webkit-transform: rotate(0deg);
+  -webkit-transform: rotate(360deg);
+  -webkit-transition-duration: 1s;
+
+  -webkit-transition-delay: now;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+.Navbar {
+  background-color: var(--cb);
+  display: flex;
+
+  justify-content: center;
+  color: var(--c1);
+  width: 100vw;
+  max-width: 100%;
+}
+
+.ustTaraf {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+}
+.results {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.results::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.searchBar {
+  width: 600px;
+  margin: auto;
+  display: flex;
+
+  height: auto;
+  flex-direction: column;
+  color: var(--c4);
+}
+.search {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.ustTaraf ul {
+  list-style: none;
+  padding-top: 10px;
+  padding: 0;
+  height: 4vh;
+}
+.ustTaraf li {
+  font-size: 17px;
+  float: left;
+  position: relative;
+
+  width: 200px;
+}
+
+.ustTaraf ul li ul {
+  display: none;
+}
+
+.ustTaraf ul li:hover ul {
+  display: block;
+}
+.ustTaraf ul li a {
+  text-decoration: none;
+
+  display: block;
+  position: relative;
+  left: 45px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+
+  margin-right: 4px;
+  padding: 5px;
+}
+.ustTaraf li ul {
+  position: absolute;
+
+  z-index: 999;
+}
+.ustTaraf ul li ul li a {
+  padding-right: 20px;
+
+  text-align: center;
+
+  font-size: 0.8em;
+}
+.ustTaraf ul li ul li a:hover {
+  padding-right: 0px;
+
+  transition: 0.5s;
+}
+
+/* ENDLESS ROTATE */
+.rotate {
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* SPINNER JUST FOR DEMO */
+.spinner {
+  position: relative;
+  left: 45%;
+  top: 45%;
+}
+
+.searchLogo {
+  top: 0.7vh;
+  right: 0.5em;
+}
+.searchLogo {
+  filter: drop-shadow(100px 100px 100px) invert(55%);
+}
+.searchSection {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+  .searchSection {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+.accountBar a,
+.accountBar a:link,
+.accountBar a:visited {
+  color: var(--c0);
+  background-color: var(--cb);
+}
+.accountBar a:hover {
+  color: var(--c0);
+}
+.loginButton a {
+  background: url("../assets/loginLogo.svg") no-repeat;
+  background-position: left 15px center;
+  padding: 10px 25px 10px 40px;
+  border-radius: 15px;
+  background-color: white;
+  color: var(--cb) !important;
+  border: 1px solid white;
+  background-size: 25px;
+}
+.loginButton a:hover {
+  background-color: var(--c0);
+  cursor: pointer;
+}
+.ratingButton a {
+  background: url("../assets/buttonStar.svg") no-repeat;
+  background-position: left 15px center;
+  padding: 10px 25px 10px 40px;
+  border-radius: 15px;
+  background-color: white;
+  color: var(--cb) !important;
+  border: 1px solid white;
+  background-size: 25px;
+}
+.ratingButton a:hover {
+  background-color: var(--c0);
+  cursor: pointer;
+}
+
+.inputField {
+  text-indent: 10px;
+  width: 100%;
+  height: 60px;
+  padding-inline-start: 30px;
+  color: var(--c4);
+  border: 1px solid var(--cb);
+  outline: 1px solid var(--cb);
+
+  border-radius: 2vh;
+}
+/*.inputField:focus {
+  border-bottom: none;
+
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+} */
+.focusedSearch {
+  border-bottom: none;
+
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.inputBg {
+  background: url("../assets/search.svg") no-repeat !important;
+  background-position: left 2% center !important;
+  background-size: 25px !important;
+}
+.Navbar a:visited,
+.Navbar a:focus,
+.Navbar a:hover,
+.Navbar a:link {
+  text-decoration: none;
+  color: var(--c1);
+}
+.search a:visited,
+.search a:focus,
+.search a:hover,
+.search a:link {
+  text-decoration: none;
+  color: var(--c4);
+}

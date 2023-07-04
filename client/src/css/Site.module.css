@@ -1,0 +1,86 @@
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  max-height: calc(100vh - 90px);
+  overflow: auto;
+}
+
+.website {
+  width: 800px;
+
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.siteLogo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.siteInfo {
+  padding: 20px;
+}
+.siteDomain {
+  font-size: 25px;
+}
+.siteStar {
+  font-size: 20px;
+  color: var(--cb);
+}
+.siteStar i {
+  font-size: 30px;
+  color: var(--cb);
+}
+.Rates {
+  width: 800px;
+  margin-top: 10px;
+}
+.raterPhoto {
+  width: 50px;
+  height: 50px;
+}
+.rate {
+  background-color: rgb(239, 239, 239);
+
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  gap: 10px;
+  font-size: large;
+  flex-direction: column;
+}
+.comment {
+  padding-left: 50px;
+}
+.rate a {
+  text-decoration: none;
+}
+.date span {
+  color: var(--cb);
+}
+.rater {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.raterPhoto img {
+  border-radius: 50%;
+}
+.star {
+  margin-left: 50px;
+}
+.createDate {
+  display: flex;
+  justify-content: space-between;
+}

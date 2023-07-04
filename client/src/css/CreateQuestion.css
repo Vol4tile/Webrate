@@ -1,0 +1,91 @@
+.ql-editor {
+  min-height: 200px;
+}
+.createQuestionButton {
+  border-color: #0b0c10 !important;
+}
+.createQuestion pre {
+  background-color: rgba(196, 196, 196, 0.97) !important;
+  color: #0b0c10 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+.trueStar {
+  filter: sepia(100%);
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  -webkit-appearance: none;
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  transition: border 0.3s ease;
+}
+.form-field::placeholder {
+  color: var(--input-placeholder);
+}
+.form-field:focus {
+  outline: none;
+  border-color: var(--cb);
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+form-group > span,
+.form-field {
+  white-space: nowrap;
+  display: block;
+}
+form-group > span,
+.form-field:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+form-group > span,
+.form-field:first-child {
+  border-radius: 6px 0 0 6px;
+}
+form-group > span,
+.form-field:last-child {
+  border-radius: 0 6px 6px 0;
+}
+.form-group > span,
+.form-field:not(:first-child) {
+  margin-left: -1px;
+}
+
+.form-field {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form-group > span {
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--c0);
+  background: var(--cb);
+  border: 1px solid var(--cb);
+  transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.form-group:focus span {
+  color: var(--group-color-focus);
+  background: var(--group-background-focus);
+  border-color: var(--group-border-focus);
+}

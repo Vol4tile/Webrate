@@ -1,0 +1,19 @@
+.login button:hover {
+  opacity: 0.8;
+}
+
+.login a,
+.login a:visited,
+.login a:focus {
+  text-decoration: none;
+  color: var(--cb);
+}
+.login a:hover {
+  opacity: 0.7;
+}
+.apple:hover {
+  outline: 1.5px solid black;
+}
+.google:hover {
+  outline: 1.5px solid #47b5ff;
+}

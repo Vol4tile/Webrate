@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@0,100;0,400;1,900&family=Rubik&family=Ubuntu&display=swap");
+:root {
+  --input-color: #99a3ba;
+  --input-border: #cdd9ed;
+  --input-background: #fff;
+  --input-placeholder: #cbd1dc;
+
+  --input-border-focus: #275efe;
+
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #eef4ff;
+
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #678efe;
+
+  /* ----- */
+  --c0: #f8f5f9;
+  --c1: #e8f3f1;
+  --c2: #b9d8cf;
+  --c3: #8f5dd4;
+  --c4: #1d3731;
+  --c5: #996493;
+  --c6: #914569;
+  --cb: #6c63ff;
+  --c7: #494ae1;
+  --c8: #3737e2;
+  --a-color: #fff;
+  --a-background: #000;
+  --a-hover-color: rgb(0, 170, 255);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cb);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c7);
+}
