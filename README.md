@@ -1,5 +1,5 @@
 # Webrate
-MERN
+MERN Stack Website Rating
 
 cd client && npm start
 
